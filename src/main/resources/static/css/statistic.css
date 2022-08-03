@@ -1,0 +1,158 @@
+body{
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+    grid-template-columns: 16rem auto;
+    font-family: 'Times New Roman', Times, serif;
+    height:100vh;
+    margin:0;
+    background-image: url("https://res.cloudinary.com/dpqbf79wg/image/upload/v1659088556/hobbies-leisure-lifestyle-pastime-fun-concept-74926121_oiaxmx.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: white;
+}
+header h2{
+    margin: auto;
+    color: cornflowerblue;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+input{
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 2px solid rgb(240, 27, 27);
+    border-radius: 10px;
+}
+li {
+    list-style: none;
+}
+
+#hamnav {
+    width: 56%;
+    position: sticky;
+    top: 0;
+}
+
+#hamitems { display: flex;
+    align-items: center;
+    justify-content: end; }
+#hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 8px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+}
+#hamitems a:hover { border-bottom: 3px solid #008cba; }
+
+#hamnav label, #hamburger { display: none; }
+
+@media screen and (max-width: 768px){
+    /* (A) BREAK INTO VERTICAL MENU */
+    #hamitems a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-top: 1px solid #333;
+    }
+    #hamnav label {
+        display: inline-block;
+        color: white;
+        background: #a02620;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
+}
+
+aside {
+    grid-area: aside;
+    background-color: #e7e9eb;
+    border-top-right-radius: 10px;
+    height: 86vh;
+}
+
+aside li{
+    margin-top: 10px;
+}
+
+aside button{
+    border: none;
+}
+main {
+    grid-area: main;
+}
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: 20px auto auto;
+}
+
+.hobby-card{
+    max-width: 23%;
+    border-radius: 10px;
+}
+
+.hobby-card img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.hobby-card div div{
+    margin: auto;
+    background-color: white;
+    padding: 5px;
+}
+
+#allRegisteredUsers{
+    display: none;
+}
+#deleteBtn {
+    border-radius: 10px;
+    background-color: red;
+    padding: 7px;
+}
+footer {
+    grid-area: footer;
+    position: sticky;
+    margin-top:auto;
+}
+footer p{
+    background-color: purple;
+    color: #ffffff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+

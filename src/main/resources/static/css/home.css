@@ -1,0 +1,195 @@
+@import url("base.css");
+
+main {
+    background-image: url("https://res.cloudinary.com/dpqbf79wg/image/upload/v1659088556/hobbies-leisure-lifestyle-pastime-fun-concept-74926121_oiaxmx.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.cards {
+    display: flex;;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: 20px auto auto;
+}
+
+.categories h2,p{
+    text-align: center;
+}
+
+.categories p{
+    font-size: 30px;
+}
+
+.hobby-card{
+    max-width: 23%;
+    border-radius: 10px;
+}
+
+.hobby-card img{
+    max-width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.hobby-card div div{
+    max-width: 90%;
+    margin: auto;
+}
+
+::placeholder {
+    color: #ffffff !important;
+    opacity: 1;
+    font-size: 18px !important;
+}
+.form-group p{
+    margin-top: 5px;
+    font-size: 15px;
+    color: red;
+}
+#show-hobbies{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: 20px auto auto;
+
+}
+.registerForm {
+    background-color: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 6rem;
+    left: 38rem;
+    padding: 0px 21px 20px;
+    border-radius: 15px;
+    border-color: #d2d2d2;
+    border-width: 5px;
+    color: white;
+    box-shadow: 0 1px 0 #cfcfcf;
+}
+
+.backgroundImage{
+    opacity: 0.5;
+    height: 85vh;
+}
+.form-control {
+    background: transparent !important;
+    border-radius: 10px;
+}
+
+.registerForm button {
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 9rem;
+}
+
+.addHobby select{
+    margin-bottom: 10px;
+}
+
+.addHobby input[type="file"]{
+    border-color: #ced4da;
+}
+h4 {
+    border: 0 solid #fff;
+    border-bottom-width: 1px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.pfileInfoCard{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    border: black 3px solid;
+    border-radius: 10px;
+    width: 30%;
+    background-color: #d6babf;
+}
+
+.container {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.container li {
+    margin: 20px;
+    color: black;
+}
+
+.bikeImg{
+    width: 70%;
+}
+
+.addHobby{
+    position: absolute;
+    background-color: white;
+    top: 5rem;
+}
+
+h3{
+    color: black;
+}
+
+.addHobbyForm input, select, textarea {
+    background-color: cadetblue;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    width: 100%;
+}
+
+.statisticNav{
+    max-width: 20%;
+}
+
+section label {
+    color: black;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+section input {
+    background-color: lightyellow;
+}
+
+section button {
+    background-color: teal;
+}
+
+.hobby-card{
+    display: flex;
+    flex-direction: column;
+    background-color: linen;
+    border: azure;
+}
+
+#searchUl {
+    position: center;
+    margin: 10px;
+}
+
+#searchUl li{
+    margin: 7px;
+    border: linen;
+}
+
+table {
+    border-width: 3px;
+    background-color: lightgoldenrodyellow;
+    margin-right: 10px;
+    border-color: #401408;
+}
+
